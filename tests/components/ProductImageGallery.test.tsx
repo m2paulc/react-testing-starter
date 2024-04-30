@@ -16,7 +16,7 @@ describe("ProductImageGallery", () => {
 		const images = screen.getAllByRole("img");
 		expect(images).toHaveLength(2);
 		imageUrls.forEach((url, index) => {
-			expect(images[index]).toHaveAttribute("src", imageUrls[index]);
+			expect(images[index]).toHaveAttribute("src", url);
 		});
 	});
 });
